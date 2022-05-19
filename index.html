@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flap 'n' Fly | Home</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Scaled Down Flappy Bird">
+        <meta name="author" content="Anmol, Agrim, Aman, Archit">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/images/favicon.ico">
+        <link rel="stylesheet" href="assets/css/navbar.css">
+        <link rel="stylesheet" href="assets/css/scrollbar.css">
+        <link rel="stylesheet" href="assets/css/modal.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="section">
+                <div class="page01" id="home">
+                    <div class="navCont">
+                        <div class="topNav">
+                            <a href="index.html" id="textLogo">Flap 'n' Fly</a>
+                            <div class="topnavBtns" id="copyfromdiv">
+                                <a href="index.html" class="active">Home</a>
+                                <a href="#htp">How to play?</a>
+                                <a href="contact.html">Contact</a>
+                                <a href="about.html">About</a>
+                                <a href="donation.html">Donate us</a>
+                                <div class="dropdown">
+                                    <button class="dropbtn">Account 
+                                      <i class="fa fa-caret-down"></i>
+                                    </button>
+                                    <div class="dropdown-content">
+                                      <a href="login.html">Login</a>
+                                      <a href="signup.html">New here?</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown resdrop">
+                                <button class="dropbtn">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <div class="dropdown-content" id="pasteherediv">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pageContent">
+                        <div class="logo">
+                            <img id="homegif" src="assets/images/flappy.gif">
+                        </div>
+
+                        <div class="btns">
+                            <button id="openModal">Play</button>
+                            <button onclick="window.location.href='leaderboard.html';">Leaderboard</button>
+                            <button onclick="erralt()">Exit</button>
+                        </div>
+
+                        <div id="modal" class="modal">
+                            <div class="modal-content">
+                                <div class="closeDiv">
+                                    <span class="close">&times;</span>
+                                </div>
+                                <div class="modalHolder">
+                                    <div class="logtocont">
+                                        <h1>Login & Get identity!</h1>
+                                    
+                                        <div class="loginForm">
+                                            <label for="uname">Username</label>
+                                            <input type="text" id="uname" name="uname" placeholder="Enter your Username" required>
+                        
+                                            <label for="pass">Password</label>
+                                            <input type="password" id="pass" name="pass" placeholder="Enter your Password" required>
+                                            
+                                            <button onclick="window.location.href='play.html';">Continue</button>
+                                        </div>
+                                    </div>
+                                    <div class="orDiv">
+                                        <div class="or">
+                                            <h1>OR</h1>
+                                        </div>
+                                    </div>
+                                    <div class="anonplayDiv" onclick="location.href='play.html';">
+                                        <div class="anonplay">
+                                            <h1><i class="fa fa-user-secret"></i> Play Now<br><small style="font-size: 30%;">(ANONYMOUSLY)</small></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="page02" id="htp">
+                    <h1 class="yetanother">Flap 'n' Fly - Yet another Flappy Bird Game.</h1>
+                    <div class="howtoplay">
+                        <div class="exphtp">
+                            <h2 class="htptext">How to Play?</h2>
+                            <ul>
+                                <li>
+                                    <b>Start the game.</b> Tap the Play Button on <a href="#home">Homepage</a> to start. 
+                                    Tap the screen again to allow your bird to fly and to start the game.
+                                </li>
+                                <li>
+                                    <b>Stay in the middle of screen until the first set of pipes appears.</b> 
+                                    Measure your tap heights to go between the two pipes.
+                                    The faster you tap, the higher you go. Each tap represents a wing flap and higher flight. 
+                                    Once you stop, you drop towards the ground.
+                                </li>
+                                <li>
+                                    <b>Stay in the middle of the pipes.</b> This is the main objective of the game. 
+                                    If you hit a pipe or the ground, the game ends.
+                                </li>
+                                <li>
+                                    <b>Find your rhythm for higher and lower pipes.</b> 
+                                    This is important when you need to go higher or drop, or else you will hit a pipe.
+                                </li>
+                                <li>
+                                    <b>Try not to go high.</b> You can still bump into a pipe.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="wasd">
+                            <img id="wasdimg" src="assets/images/wasd.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
+</html>
